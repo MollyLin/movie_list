@@ -6,3 +6,7 @@ get('/movies') do
   @movie.title = "Beginning Ruby 3: From Beginner to Pro"
   erb :index
 end
+
+get('/new') do
+  erb :new
+end
