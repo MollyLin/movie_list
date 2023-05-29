@@ -7,6 +7,10 @@ get('/movies') do
   erb :index
 end
 
-get('/new') do
+get('/movies/new') do
   erb :new
+end
+
+post('/movies/create') do
+  "Received: #{params.inspect}"
 end

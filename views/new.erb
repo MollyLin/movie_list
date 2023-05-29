@@ -9,18 +9,18 @@
   <body>
     <h1 class="text-center fs-1 lh-lg font-monospace">Add New Movie</h1>
     <div class="container" style="max-width: 540px;">
-      <form class="row justify-content-sm-center">
+      <form class="row justify-content-sm-center" method="post" action="/movies/create">
         <div class="form-field mb-4">
           <label for="inputTitle" class="col-form-label">片名</label>
-          <input type="text" class="form-control" id="inputTitle">
+          <input type="text" name="title" class="form-control" id="inputTitle">
         </div>
         <div class="form-field mb-4">
           <label for="inputDirector" class="col-form-label">導演</label>
-          <input type="text" class="form-control" id="inputDirector">
+          <input type="text" name="director" class="form-control" id="inputDirector">
         </div>
         <div class="form-field mb-4">
           <label for="inputYear" class="col-form-label">發行年份</label>
-          <input type="text" class="form-control" id="inputYear">
+          <input type="text" name="year" class="form-control" id="inputYear">
         </div>
         <div class="form-field mb-4">
           <button type="submit" class="btn btn-primary">確定</button>
