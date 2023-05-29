@@ -1,5 +1,8 @@
 require 'sinatra'
 require 'movie'
+require 'movie_store' # load MovieStore Class
+
+store = MovieStore.new('movies.yml') #Create a MovieStore instance to update movies.yml
 
 get('/movies') do
   @movie = Movie.new
@@ -12,5 +15,10 @@ get('/movies/new') do
 end
 
 post('/movies/create') do
-  "Received: #{params.inspect}"
+  @movie = Movie.new
+  @movie.title = params['title']
+  @movie.director = params['director']
+  @movie.year = params['year']
+  store.save(@movie)
+  redirect '/movies/new'
 end

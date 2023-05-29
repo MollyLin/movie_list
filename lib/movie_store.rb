@@ -2,10 +2,10 @@ require 'yaml/store'
 
 class MovieStore
   def initialize(file_name)
-    @store = YAML:Store.new(file_name)
+    @store = YAML::Store.new(file_name) # YAML::Store => Public Class Methods
   end
 
-  def sava(movie)
+  def save(movie)
     @store.transaction do
       unless movie.id
         highest_id = @store.roots.max || 0
