@@ -5,8 +5,7 @@ require 'movie_store' # load MovieStore Class
 store = MovieStore.new('movies.yml') #Create a MovieStore instance to update movies.yml
 
 get('/movies') do
-  @movie = Movie.new
-  @movie.title = "Beginning Ruby 3: From Beginner to Pro"
+  @movies = store.all # load all movies object
   erb :index
 end
 

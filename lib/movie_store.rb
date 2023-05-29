@@ -5,6 +5,12 @@ class MovieStore
     @store = YAML::Store.new(file_name) # YAML::Store => Public Class Methods
   end
 
+  def all
+    @store.transaction do
+      @store.roots.map { |id| @store[id] } # 以每個 key 來建立陣列
+    end
+  end
+  
   def save(movie)
     @store.transaction do
       unless movie.id
