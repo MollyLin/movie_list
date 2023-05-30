@@ -21,3 +21,9 @@ post('/movies/create') do
   store.save(@movie)
   redirect '/movies/new'
 end
+
+get('/movies/:id') do
+  id = params['id'].to_i # id 為字串，轉成整數
+  @movie = store.find(id) # 拿 id 載個別物件
+  erb :show
+end

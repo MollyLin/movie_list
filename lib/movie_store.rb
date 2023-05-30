@@ -10,6 +10,12 @@ class MovieStore
       @store.roots.map { |id| @store[id] } # 以每個 key 來建立陣列
     end
   end
+
+  def find(id)
+    @store.transaction do
+      @store[id]
+    end
+  end
   
   def save(movie)
     @store.transaction do
