@@ -11,19 +11,26 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="d-flex align-items-center flex-column border">
+            <div class="d-flex align-items-center flex-column">
               <div class="mb-auto bg-dark box">
-                <img src="https://picsum.photos/id/<%= @movie.id %>/300/200" class="card-img-top" alt="...">
+                <img src="https://picsum.photos/id/<%= @movie.id %>/600/500" class="card-img-top" alt="...">
               </div>
             </div>
-            <div class="d-flex align-items-center flex-column border">
-              <div class="mt-auto">Year: <%= @movie.year %></div>
+            <div class="d-flex align-items-center flex-column">
+              <div class="mt-auto">
+                <strong>Year: </strong><%= @movie.year %>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="h1 text-center"><%= @movie.title %></div>
-            <div class="text-muted lead">Director: <%= @movie.director %></div>
-            <div class="text-muted lead">Describe:</div>
+            <dl class="row">
+              <dt class="col-sm-3">Director:</dt>
+              <dd class="col-sm-9"><%= @movie.director %></dd>
+              <dt class="col-sm-3">Describe:</dt>
+              <dd class="col-sm-9"><%= @movie.describe %></dd>
+            </dl>
+            <a href="/movies">回主頁</a>
           </div>
         </div>
       </div>

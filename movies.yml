@@ -1,11 +1,60 @@
 ---
 1: !ruby/object:Movie
-  title: asdfadsfa
-  director: 231asdfa
-  year: '1222'
+  title: The Godfather
+  director: Francis Ford Coppola
+  year: '1972'
+  describe: An everyday story of Mafia folk, incorporating a severed horse's head
+    in the bed and a number of heartwarming family occasions, as well as pointers
+    on how not to behave in your local trattoria (i.e. blasting the brains of your
+    co-diners out all over their fettuccini).Mario Puzo's novel was brought to the
+    screen in bravura style by Coppola, who was here trying out for the first time
+    that piano/fortissimo style of crosscutting between religious ritual and bloody
+    machine-gun massacre that was later to resurface in a watered-down version in
+    The Cotton Club. See Brando with a mouthful of orange peel. Watch Pacino's cheek
+    muscles twitch in incipiently psychotic fashion. Trace his rise from white sheep
+    of the family to budding don and fully-fledged bad guy. Singalong to Nino Rota's
+    irritatingly catchy theme tune. Its soap operatics should never have been presented
+    separately from Part II.
   id: 1
 2: !ruby/object:Movie
-  title: adsfaasd
-  director: ipoirfdf
-  year: '1233'
+  title: In the Mood for Love
+  director: Wong Kar-wai
+  year: '2000'
+  describe: Wong's paean to the agony'n ecstasy of buttoned-up emotions is a kind-of
+    sequel to Days of Being Wild, shaped and scored as a valse triste. In Hong Kong,
+    1962, Mr Chow (Leung) and Mrs Chan (Cheung) are neighbours who discover that their
+    spouses are having an affair. He finds excuses to spend time with her, apparently
+    intending to jilt her. Then they fall in love, but (aside from one reckless moment
+    in a hotel) repress their feelings. He runs away to work as a journalist in Singapore;
+    in 1966, covering De Gaulle's state visit to Cambodia, he's in Angkor Wat trying
+    to unburden himself of the secret which overwhelms his life... Every charged frame
+    of the film pulses with the central contradiction between repression and emotional
+    abandon; the formalism and sensuality are inextricable. Career-best performances
+    from both leads, Leung having a Cannes 'Best Actor' prize to show for his.
   id: 2
+3: !ruby/object:Movie
+  title: Steve Jobs
+  director: Danny Boyle
+  year: '2015'
+  describe: Steve Jobs is a 2015 biographical drama film directed by Danny Boyle and
+    written by Aaron Sorkin. A British-American co-production, it was adapted from
+    the 2011 biography by Walter Isaacson and interviews conducted by Sorkin. The
+    film covers 14 years (1984–1998) in the life of Apple Inc. co-founder Steve Jobs,
+    specifically ahead of three press conferences he gave during that time. Jobs is
+    portrayed by Michael Fassbender, with Kate Winslet as Joanna Hoffman and Seth
+    Rogen, Katherine Waterston, Michael Stuhlbarg, and Jeff Daniels in supporting
+    roles.
+  id: 3
+4: !ruby/object:Movie
+  title: The Social Network
+  director: David Fincher
+  year: '2010'
+  describe: The Social Network is a 2010 American biographical drama film directed
+    by David Fincher and written by Aaron Sorkin, based on the 2009 book The Accidental
+    Billionaires by Ben Mezrich. It portrays the founding of social networking website
+    Facebook. It stars Jesse Eisenberg as Facebook founder Mark Zuckerberg, with Andrew
+    Garfield as Eduardo Saverin, Justin Timberlake as Sean Parker, Armie Hammer as
+    Cameron and Tyler Winklevoss, and Max Minghella as Divya Narendra. Neither Zuckerberg
+    nor any other Facebook staff were involved with the project, although Saverin
+    was a consultant for Mezrich's book.
+  id: 4

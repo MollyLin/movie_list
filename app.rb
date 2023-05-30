@@ -18,6 +18,7 @@ post('/movies/create') do
   @movie.title = params['title']
   @movie.director = params['director']
   @movie.year = params['year']
+  @movie.describe = params['describe']
   store.save(@movie)
   redirect '/movies/new'
 end
