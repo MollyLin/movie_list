@@ -24,6 +24,11 @@ ruby -I lib app.rb
 
 You should now be able to view the web app by visiting http://localhost:4567 in your web browser.
 
+## 🖥️ Screenshot
+![image](/public/images/index_movie-list.png)
+![image](/public/images/show_movie-detail.png)
+![image](/public/images/new_add-new-movie.png)
+
 ## 📚 Reference
 - [《 Head First Ruby 》](https://www.oreilly.com/library/view/head-first-ruby/9781449372644/) by Jay McGavren
 - [Wiki - The Social Network](https://en.wikipedia.org/wiki/The_Social_Network)
