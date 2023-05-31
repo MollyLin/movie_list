@@ -11,19 +11,23 @@
     <div class="container text-center">
       <div class="card-group">
         <% @movies.each do |movie| %>
-        <div class="card">
-          <img src="https://picsum.photos/id/<%= movie.id %>/300/200" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"><%= movie.title %></h5>
-            <p class="card-text">director: <%= movie.director %></p>
-            <p class="card-text">Year: <%= movie.year %></p>
+          <div class="card">
+            <img src="https://picsum.photos/id/<%= movie.id %>/300/200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%= movie.title %></h5>
+              <dl class="row">
+                <dt>Director:</dt>
+                <dd><%= movie.director %></dd>
+                <dt>Year:</dt>
+                <dd><%= movie.year %></dd>
+              </dl>
+            </div>
+            <div class="card-footer">
+              <a href="/movies/<%= movie.id %>" class="btn btn-primary">Read More</a>
+            </div>
           </div>
-          <div class="card-footer">
-            <a href="/movies/<%= movie.id %>" class="btn btn-primary">Read More</a>
-          </div>
-        </div>
         <% end %>
-    </div>
+      </div>
     </div>
   </body>
 </html>

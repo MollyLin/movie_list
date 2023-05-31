@@ -4,6 +4,10 @@ require 'movie_store' # load MovieStore Class
 
 store = MovieStore.new('movies.yml') #Create a MovieStore instance to update movies.yml
 
+get('/') do
+  redirect '/movies'
+end
+
 get('/movies') do
   @movies = store.all # load all movies object
   erb :index
